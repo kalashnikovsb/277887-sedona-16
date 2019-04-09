@@ -6,7 +6,6 @@
   </head>
   <body>
     <header class="page-header">
-      <button class="page-header__button page-header__button--close" aria-label="Закрыть главное меню"></button>
       <nav class="page-nav">
         <ul class="page-nav__list">
           <li class="page-nav__item">
@@ -26,44 +25,48 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="#" width="100" height="100" alt="Логотип сайта">
       </a>
-      <button class="page-header__button page-header__button--hamburger" aria-label="Открыть главное меню"></button>
+      <button class="page-header__button page-header__button--hamburger" type="button" aria-label="Открыть главное меню"></button>
     </header>
     <main class="page-content">
       <div class="slogan slogan--small">
         <img class="slogan__image slogan__image--small" src="#" width="100" height="100" alt="Пейзаж, изображение гор и леса">
       </div>
       <section class="page-intro">
-        <h2 class="page-intro__title">Фото и Видео</h2>
+        <h1 class="page-intro__title">Фото и Видео</h1>
         <p class="page-intro__text">Не можете решиться на путешествие изза курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="photo-list">
         <h2 class="visually-hidden">Список фотографий Седоны</h2>
         <section class="photo-item">
-          <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение дороги и гор вдали">
+          <a class="photo-item__wrap" href="#">
+            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение дороги и гор вдали">
+          </a>
           <h3 class="photo-item__title">Неродные просторы</h3>
           <p class="photo-item__author">Автор фото: Борис</p>
-          <span class="photo-item__like"></span>
           <span class="photo-item__like-counter">1350</span>
         </section>
         <section class="photo-item">
-          <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение кактуса">
+          <a class="photo-item__wrap" href="#">
+            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение кактуса">
+          </a>
           <h3 class="photo-item__title">Местная растительность</h3>
           <p class="photo-item__author">Автор фото: Сергей</p>
-          <span class="photo-item__like"></span>
           <span class="photo-item__like-counter">143</span>
         </section>
         <section class="photo-item">
-          <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение серпантина поднимающегося вверх">
+          <a class="photo-item__wrap" href="#">
+            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение серпантина поднимающегося вверх">
+          </a>
           <h3 class="photo-item__title">Дорога на север</h3>
           <p class="photo-item__author">Автор фото: Петр</p>
-          <span class="photo-item__like"></span>
           <span class="photo-item__like-counter">96</span>
         </section>
         <section class="photo-item">
-          <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение моста дьявола">
+          <a class="photo-item__wrap" href="#">
+            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение моста дьявола">
+          </a>
           <h3 class="photo-item__title">Мост дьявола</h3>
           <p class="photo-item__author">Автор фото: Антон</p>
-          <span class="photo-item__like"></span>
           <span class="photo-item__like-counter">254</span>
         </section>
       </section>
@@ -77,9 +80,9 @@
               <div class="video-player__scroll-bar-dot"></div>
             </div>
             <div class="video-player__additional">
-              <div class="video-player__replay"></div>
-              <div class="video-player__subtitles"></div>
-              <div class="video-player__fullscreen"></div>
+              <button class="video-player__replay" type="button">Проигрывать сначала</button>
+              <button class="video-player__subtitles" type="button">Включить субтитры</button>
+              <button class="video-player__fullscreen" type="button">Полноэкранный режим</button>
             </div>
           </div>
         </div>
@@ -101,7 +104,7 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text"></p>
+        <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Htmlacademy">Htmlacademy</a>
       </div>
     </footer>
