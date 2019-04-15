@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="sass/style.scss" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -31,7 +31,7 @@
     </header>
     <main class="page-content">
       <div class="slogan slogan--small">
-        <img class="slogan__image slogan__image--small" src="#" width="100" height="100" alt="Пейзаж, изображение гор и леса">
+        <img class="slogan__image slogan__image--big" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Пейзаж, изображение гор и леса">
       </div>
       <section class="page-intro">
         <h1 class="page-intro__title">Фото и Видео</h1>
@@ -41,7 +41,7 @@
         <h2 class="visually-hidden">Список фотографий Седоны</h2>
         <section class="photo-item">
           <a class="photo-item__wrap" href="#">
-            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение дороги и гор вдали">
+            <img class="photo-item__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Изображение дороги и гор вдали">
           </a>
           <h3 class="photo-item__title">Неродные просторы</h3>
           <p class="photo-item__author">Автор фото: Борис</p>
@@ -49,7 +49,7 @@
         </section>
         <section class="photo-item">
           <a class="photo-item__wrap" href="#">
-            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение кактуса">
+            <img class="photo-item__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Изображение кактуса">
           </a>
           <h3 class="photo-item__title">Местная растительность</h3>
           <p class="photo-item__author">Автор фото: Сергей</p>
@@ -57,7 +57,7 @@
         </section>
         <section class="photo-item">
           <a class="photo-item__wrap" href="#">
-            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение серпантина поднимающегося вверх">
+            <img class="photo-item__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Изображение серпантина поднимающегося вверх">
           </a>
           <h3 class="photo-item__title">Дорога на север</h3>
           <p class="photo-item__author">Автор фото: Петр</p>
@@ -65,7 +65,7 @@
         </section>
         <section class="photo-item">
           <a class="photo-item__wrap" href="#">
-            <img class="photo-item__image" src="#" width="100" height="100" alt="Изображение моста дьявола">
+            <img class="photo-item__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Изображение моста дьявола">
           </a>
           <h3 class="photo-item__title">Мост дьявола</h3>
           <p class="photo-item__author">Автор фото: Антон</p>
@@ -82,9 +82,9 @@
               <div class="video-player__scroll-bar-dot"></div>
             </div>
             <div class="video-player__additional">
-              <button class="video-player__replay" type="button">Проигрывать сначала</button>
-              <button class="video-player__subtitles" type="button">Включить субтитры</button>
-              <button class="video-player__fullscreen" type="button">Полноэкранный режим</button>
+              <button class="video-player__replay" type="button"><span class="visually-hidden">Проигрывать сначала</span></button>
+              <button class="video-player__subtitles" type="button"><span class="visually-hidden">Включить субтитры</span></button>
+              <button class="video-player__fullscreen" type="button"><span class="visually-hidden">Полноэкранный режим</span></button>
             </div>
           </div>
         </div>
@@ -95,19 +95,19 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" aria-label="twitter.com">twitter.com</a>
+            <a class="social__link social__link--twitter"><span class="visually-hidden">twitter.com</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" aria-label="facebook.com">facebook.com</a>
+            <a class="social__link social__link--facebook"><span class="visually-hidden">facebook.com</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" aria-label="instagram.com">instagram.com</a>
+            <a class="social__link social__link--instagram"><span class="visually-hidden">instagram.com</span></a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Htmlacademy">Htmlacademy</a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Htmlacademy</span></a>
       </div>
     </footer>
   </body>
