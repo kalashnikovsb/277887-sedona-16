@@ -1,11 +1,11 @@
 .photo-item {
-  background: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
 .photo-item__wrap {
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .photo-item__image {
@@ -24,6 +24,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  text-transform: none;
 }
 
 .photo-item__like-counter {
