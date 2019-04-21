@@ -1,3 +1,11 @@
 .page-content {
-  background-color: #ffffff;
+  width: 320px;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+@media (min-width: $tablet-width) {
+  .page-content {
+    width: 768px;
+  }
 }

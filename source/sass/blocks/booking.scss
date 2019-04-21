@@ -1,9 +1,14 @@
 .booking {
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .booking__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -11,8 +16,28 @@
 }
 
 .booking__text {
+  margin-top: 0;
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding-top: 55px;
+    padding-bottom: 58px;
+    width: 458px;
+    margin: 0 auto;
+  }
+
+  .booking__title {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+
+  .booking__text {
+    margin-bottom: 42px;
+  }
 }

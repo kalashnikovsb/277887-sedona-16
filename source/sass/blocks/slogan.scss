@@ -1,7 +1,21 @@
 .slogan {
-  background-color: #324148;
+  background-color: darkred;
 }
 
 .slogan__image {
+  width: 320px;
+  height: 389px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    width: 768px;
+  }
+
+  .slogan__image {
+    width: 768px;
+    height: 518px;
+    background: red;
+  }
 }

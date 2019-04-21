@@ -1,13 +1,38 @@
 .social {
-  background-color: #ffffff;
+  background: blue;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 .social__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  background: red;
 }
 
 .social__item {
   background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.social__item:first-of-type {
+  margin-left: 0;
+}
+
+.social__item:last-of-type {
+  margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+    margin-left: 108px;
+  }
 }

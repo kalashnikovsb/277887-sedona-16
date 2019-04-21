@@ -1,10 +1,15 @@
 .page-intro {
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: cadetblue;
+  padding-top: 38px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-intro__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -12,8 +17,40 @@
 }
 
 .page-intro__text {
+  margin-top: 0;
+  text-align: center;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+    background-color: cadetblue;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .page-intro__title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .page-intro__text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+  }
 }

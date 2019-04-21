@@ -1,7 +1,33 @@
 .reasons {
-  background-color: #ffffff;
+  width: 320px;
 }
 
-.reasons__wrap:nth-of-type(2) {
-  background-color: #eeeeee;
+.reason__details {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.reasons__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background: red;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reasons {
+    width: 768px;
+  }
+
+  .reason__details {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .reasons__wrap {
+    padding: 0;
+    display: flex;
+  }
 }

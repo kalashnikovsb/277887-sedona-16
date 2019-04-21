@@ -1,16 +1,32 @@
 .copyright {
-  background-color: #ffffff;
+  background-color: lightseagreen;
+  width: 130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .copyright__text {
-  font-family: "PT Sans", "Arial", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .copyright__link {
-  display: inline-block;
+  background: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    margin-left: auto;
+  }
 }
