@@ -3,19 +3,49 @@
 }
 
 .slogan__image {
-  width: 320px;
-  height: 389px;
   display: block;
 }
 
-@media (min-width: $tablet-width) {
-  .slogan {
-    width: 768px;
-  }
+.slogan--big {
+  width: 320px;
+  height: 389px;
+}
 
-  .slogan__image {
+.slogan__image--big {
+  width: 320px;
+  height: 389px;
+}
+
+.slogan--small {
+  width: 320px;
+  height: 158px;
+}
+
+.slogan__image--small {
+  width: 320px;
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan--big {
     width: 768px;
     height: 518px;
+  }
+
+  .slogan__image--big {
+    width: 768px;
+    height: 518px;
+    background: red;
+  }
+
+  .slogan--small {
+    width: 768px;
+    height: 290px;
+  }
+
+  .slogan__image--small {
+    width: 768px;
+    height: 290px;
     background: red;
   }
 }
