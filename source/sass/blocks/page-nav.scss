@@ -1,22 +1,20 @@
 .page-nav {
-  background-color: cornflowerblue;
+  background: red;
+  padding-bottom: 55px;
 }
 
 .page-nav__list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .page-nav__item {
   background-color: #81b3d2;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 30px;
-  padding-right: 30px;
   text-align: center;
+  padding: 7px;
 }
 
 .page-nav__link {
@@ -24,39 +22,48 @@
   line-height: 40px;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
+  background-color: black;
 }
 
 @media (min-width: $tablet-width) {
+  .page-nav {
+    padding-bottom: 0;
+  }
+
   .page-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
   }
 
   .page-nav__item {
-    border: none;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: chartreuse;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    background-color: blue;
   }
 
-  .page-nav__item:nth-of-type(1n) {
+  .page-nav__item:nth-of-type(1) {
     padding-left: 49px;
-    padding-right: 38px;
+    padding-right: 49px;
   }
 
-  .page-nav__item:nth-of-type(2n) {
-    padding-left: 39px;
-    padding-right: 39px;
+  .page-nav__item:nth-of-type(2) {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-right: auto;
   }
 
-  .page-nav__item:nth-of-type(3n) {
-    padding-left: 23px;
-    padding-right: 23px;
-    margin-left: auto;
+  .page-nav__item:nth-of-type(3) {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
-  .page-nav__item:nth-of-type(4n) {
+  .page-nav__item:nth-of-type(4) {
     padding-left: 26px;
     padding-right: 26px;
   }
@@ -64,9 +71,30 @@
   .page-nav__link {
     font-size: 14px;
     line-height: 26px;
-    font-weight: 700;
     color: #000000;
-    text-decoration: none;
-    background-color: darkorchid;
+    background-color: red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-nav__item:nth-of-type(1) {
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+
+  .page-nav__item:nth-of-type(2) {
+    padding-left: 71px;
+    padding-right: 71px;
+    margin-right: auto;
+  }
+
+  .page-nav__item:nth-of-type(3) {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .page-nav__item:nth-of-type(4) {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }

@@ -1,22 +1,24 @@
 .button {
-  background-color: #81b3d2;
+  box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border: none;
+  padding: 16px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  padding: 16px;
-  box-sizing: border-box;
-  width: 100%;
+  background-color: #81b3d2;
 }
 
 .button--booking {
-  width: 100%;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .button--booking {
-    width: 100%;
+    width: 458px;
   }
 }

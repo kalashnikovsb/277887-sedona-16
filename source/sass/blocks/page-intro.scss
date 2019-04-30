@@ -1,96 +1,148 @@
 .page-intro {
-  background-color: cadetblue;
-  padding-top: 38px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background: green;
+  text-align: center;
 }
 
 .page-intro__title {
-  margin-top: 0;
-  text-align: center;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  background: white;
 }
 
 .page-intro__text {
-  margin-top: 0;
-  text-align: center;
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
+  background: white;
+}
+
+.page-intro--index {
+  padding-top: 39px;
+  padding-bottom: 26px;
 }
 
 .page-intro__title--index {
+  width: 270px;
   margin-bottom: 28px;
-  font-size: 18px;
 }
 
 .page-intro__text--index {
+  width: 270px;
   line-height: 26px;
 }
 
+.page-intro--photo {
+  padding-top: 37px;
+  padding-bottom: 27px;
+}
+
 .page-intro__title--photo {
-  margin-bottom: 26px;
+  width: 270px;
+  margin-bottom: 27px;
 }
 
 .page-intro__text--photo {
+  width: 270px;
+  line-height: 24px;
+}
+
+.page-intro--form {
+  padding-top: 37px;
+  padding-bottom: 17px;
+}
+
+.page-intro__title--form {
+  width: 280px;
+  margin-bottom: 27px;
+}
+
+.page-intro__text--form {
+  width: 280px;
   line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-intro {
-    background-color: cadetblue;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
+  .page-intro--index {
+    padding-top: 49px;
+    padding-bottom: 50px;
+  }
+
+  .page-intro__title--index {
+    width: 600px;
+    font-size: 21px;
+    margin-bottom: 29px;
+  }
+
+  .page-intro__text--index {
+    width: 600px;
+    line-height: 26px;
   }
 
   .page-intro--photo {
     padding-top: 74px;
-    padding-bottom: 59px;
-    width: 440px;
-    margin: 0 auto;
-  }
-
-  .page-intro__title {
-    margin-top: 0;
-    margin-bottom: 28px;
-    text-align: center;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  .page-intro__text {
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #333333;
-  }
-
-  .page-intro__title--index {
-    margin-bottom: 28px;
-    font-size: 21px;
-  }
-
-  .page-intro__text--index {
-    line-height: 26px;
+    padding-bottom: 68px;
   }
 
   .page-intro__title--photo {
-    margin-bottom: 31px;
+    width: 430px;
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .page-intro__text--photo {
+    width: 430px;
+    line-height: 24px;
+  }
+
+  .page-intro--form {
+    padding-top: 74px;
+    padding-bottom: 68px;
+  }
+
+  .page-intro__title--form {
+    width: 440px;
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .page-intro__text--form {
+    width: 440px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro--photo {
+    padding-top: 110px;
+    padding-bottom: 71px;
+  }
+
+  .page-intro__title--photo {
+    width: 440px;
+    margin-bottom: 32px;
+  }
+
+  .page-intro__text--photo {
+    width: 440px;
+  }
+
+  .page-intro--form {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .page-intro__title--form {
+    width: 440px;
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .page-intro__text--form {
+    width: 440px;
     line-height: 24px;
   }
 }

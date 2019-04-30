@@ -1,21 +1,27 @@
 .page-footer {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+  background: yellow;
   padding-top: 35px;
   padding-bottom: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: deeppink;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     width: 648px;
-    display: flex;
-    padding-top: 34px;
-    padding-bottom: 35px;
-    align-items: center;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }

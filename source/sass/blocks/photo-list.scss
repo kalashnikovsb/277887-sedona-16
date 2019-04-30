@@ -1,16 +1,20 @@
 .photo-list {
-  background-color: burlywood;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0;
+  background: yellow;
 }
 
 @media (min-width: $tablet-width) {
   .photo-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    flex-grow: 0;
     padding-left: 60px;
     padding-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

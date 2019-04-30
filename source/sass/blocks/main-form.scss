@@ -1,18 +1,16 @@
 .main-form {
-  background-color: #ffffff;
+  height: 1658px;
+  background: black;
 }
 
-.main-form__inputs {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .main-form {
+    height: 1406px;
+  }
 }
 
-.main-form__legend {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+@media (min-width: $desktop-width) {
+  .main-form {
+    height: 1216px;
+  }
 }

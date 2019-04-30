@@ -1,39 +1,38 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  position: relative;
-  padding-bottom: 56px;
-  background-color: coral;
 }
 
 .page-header__logo {
-  display: block;
-  width: 102px;
-  height: 83px;
-  position: absolute;
-  left: 50%;
-  margin-left: -51px;
+  display: none;
 }
 
 .page-header__button {
-  width: 23px;
-  height: 21px;
-  background: red;
-  border: none;
-  margin: 0;
-  position: absolute;
-  right: 20px;
-  bottom: 18px;
+  display: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
-    padding-bottom: 0;
   }
 
   .page-header__logo {
-    top: 0;
+    display: none;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__logo {
+    display: none;
   }
 
   .page-header__button {

@@ -1,33 +1,3 @@
 .reasons {
-  width: 320px;
-}
-
-.reason__details {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.reasons__wrap {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  background: red;
-}
-
-
-@media (min-width: $tablet-width) {
-  .reasons {
-    width: 768px;
-  }
-
-  .reason__details {
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-  }
-
-  .reasons__wrap {
-    padding: 0;
-    display: flex;
-  }
+  background: yellow;
 }
