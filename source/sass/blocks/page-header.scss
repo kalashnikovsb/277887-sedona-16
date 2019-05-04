@@ -1,3 +1,36 @@
 .page-header {
-  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: none;
+}
+
+.page-header__button {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__button {
+    display: none;
+  }
 }

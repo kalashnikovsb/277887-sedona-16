@@ -1,3 +1,15 @@
 .page-content {
-  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-content {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content {
+    width: 1200px;
+  }
 }

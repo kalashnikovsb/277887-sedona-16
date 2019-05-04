@@ -1,3 +1,23 @@
 .photo-list {
-  background-color: #ffffff;
+  margin: 0;
+  background: yellow;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

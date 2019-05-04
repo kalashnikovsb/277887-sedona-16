@@ -1,3 +1,27 @@
 .page-footer {
-  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  background: yellow;
+  padding-top: 35px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

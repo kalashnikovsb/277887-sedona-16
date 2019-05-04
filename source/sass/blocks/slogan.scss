@@ -1,7 +1,41 @@
 .slogan {
-  background-color: #324148;
+  margin: 0;
 }
 
 .slogan__image {
+  width: auto;
   display: block;
+  background: black;
+}
+
+.slogan__image--big {
+  height: 389px;
+}
+
+.slogan__image--small {
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan__image--big {
+    height: 518px;
+  }
+
+  .slogan__image--small {
+    height: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan__image {
+    width: 1200px;
+  }
+
+  .slogan__image--big {
+    height: 518px;
+  }
+
+  .slogan__image--small {
+    height: 301px;
+  }
 }

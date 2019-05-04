@@ -1,5 +1,7 @@
-@import "fonts.scss";
 @import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
 @import "blocks/booking.scss";
 @import "blocks/button.scss";
 @import "blocks/copyright.scss";
@@ -16,8 +18,10 @@
 @import "blocks/photo-item.scss";
 @import "blocks/photo-list.scss";
 @import "blocks/promo-video.scss";
-@import "blocks/reason-big.scss";
 @import "blocks/reasons.scss";
+@import "blocks/reason-big.scss";
+@import "blocks/reasons-wrap.scss";
+@import "blocks/reason-feature.scss";
 @import "blocks/reason-small.scss";
 @import "blocks/slogan.scss";
 @import "blocks/social.scss";

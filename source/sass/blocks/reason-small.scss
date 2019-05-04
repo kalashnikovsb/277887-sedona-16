@@ -1,18 +1,69 @@
 .reason-small {
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto;
+  background: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+  padding-top: 26px;
+  padding-bottom: 13px;
+}
+
+.reason-small:last-of-type {
+  border-bottom: none;
 }
 
 .reason-small__title {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 9px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
+  background: lightgreen;
 }
 
 .reason-small__text {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  text-align: center;
+  background: lightgreen;
+}
+
+@media (min-width: $tablet-width) {
+  .reason-small {
+    width: 256px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 44px;
+    padding-bottom: 23px;
+    border: none;
+    background: red;
+  }
+
+  .reason-small__title {
+    width: 160px;
+    font-size: 21px;
+  }
+
+  .reason-small__text {
+    width: 160px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-small {
+    width: 400px;
+    padding-bottom: 44px;
+  }
+
+  .reason-small__text {
+    width: 290px;
+  }
 }

@@ -1,8 +1,31 @@
 .hashtag {
-  font-family: "PT Sans", "Arial", sans-serif;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 37px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  text-transform: uppercase;
+  background: white;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .hashtag {
+    width: 140px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 0;
+    margin-right: 109px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hashtag {
+    width: 140px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 0;
+    margin-right: 265px;
+  }
 }
