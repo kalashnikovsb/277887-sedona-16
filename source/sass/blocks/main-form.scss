@@ -1,16 +1,27 @@
 .main-form {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 1658px;
   background: black;
 }
 
 @media (min-width: $tablet-width) {
   .main-form {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
     height: 1406px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-form {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
     height: 1216px;
   }
 }

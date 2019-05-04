@@ -1,4 +1,6 @@
 .booking {
+  width: 320px;
+  margin: 0 auto;
   background-color: chocolate;
   padding-top: 28px;
   padding-bottom: 49px;
@@ -31,6 +33,8 @@
 
 @media (min-width: $tablet-width) {
   .booking {
+    width: 768px;
+    margin: 0 auto;
     padding-top: 55px;
     padding-bottom: 58px;
   }

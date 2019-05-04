@@ -1,4 +1,6 @@
 .promo-video {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 35px;
   background: green;
@@ -28,6 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .promo-video {
+    width: 768px;
     padding-top: 65px;
     padding-bottom: 73px;
   }
@@ -45,6 +48,7 @@
 
 @media (min-width: $desktop-width) {
   .promo-video {
+    width: 1200px;
     padding-top: 70px;
     padding-bottom: 70px;
   }
