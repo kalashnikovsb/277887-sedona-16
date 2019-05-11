@@ -1,7 +1,6 @@
 .booking {
   width: 320px;
   margin: 0 auto;
-  background-color: chocolate;
   padding-top: 28px;
   padding-bottom: 49px;
   text-align: center;
@@ -16,7 +15,6 @@
   font-weight: 700;
   color: #000000;
   text-align: center;
-  background: red;
 }
 
 .booking__text {
@@ -28,7 +26,6 @@
   font-weight: 400;
   color: #333333;
   text-align: center;
-  background: red;
 }
 
 @media (min-width: $tablet-width) {

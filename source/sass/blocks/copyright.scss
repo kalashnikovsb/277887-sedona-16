@@ -1,10 +1,9 @@
 .copyright {
-  width: 128px;
+  width: 129px;
   margin: 0 auto;
-  background: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .copyright__text {
@@ -13,19 +12,30 @@
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  background: gray;
+  margin-top: 3px;
 }
 
-.copyright__link {
+.copyright__link svg {
   width: 27px;
   height: 34px;
-  background: gray;
+}
+
+.copyright__link path {
+  fill: #000000;
+}
+
+.copyright__link:hover path {
+  fill: #81b3d2;
+}
+
+.copyright__link:active path {
+  fill: #b2b2b2;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    margin-top: 42px;
-    margin-bottom: 42px;
+    margin-top: 43px;
+    margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
   }

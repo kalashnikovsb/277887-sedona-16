@@ -23,14 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    background-color: #ffffff;
     width: 1200px;
-  }
-
-  .page-header__logo {
-    display: none;
-  }
-
-  .page-header__button {
-    display: none;
+    box-shadow: -15px 15px 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
   }
 }

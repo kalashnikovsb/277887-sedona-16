@@ -13,6 +13,19 @@
   background-color: #81b3d2;
 }
 
+.button:not(.button--disabled):hover {
+  background-color: #669ec0;
+}
+
+.button:not(.button--disabled):active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--disabled {
+  background-color: #e5e5e5;
+}
+
 .button--booking {
   width: 280px;
 }
