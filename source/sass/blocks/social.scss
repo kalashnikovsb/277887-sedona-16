@@ -48,7 +48,7 @@
   position: absolute;
   top: 16px;
   left: 14px;
-  background: url("../../img/icon-twitter.svg") 50% 50% no-repeat;
+  background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
 }
 
 .social__link--facebook::before {
@@ -58,7 +58,7 @@
   position: absolute;
   top: 14px;
   left: 19px;
-  background: url("../../img/icon-facebook.svg") 50% 50% no-repeat;
+  background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
 }
 
 .social__link--youtube::before {
@@ -68,7 +68,7 @@
   position: absolute;
   top: 17px;
   left: 13px;
-  background: url("../../img/icon-youtube.svg") 50% 50% no-repeat;
+  background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
 }
 
 @media (min-width: $tablet-width) {
