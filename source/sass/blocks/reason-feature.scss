@@ -1,6 +1,6 @@
 .reason-feature {
-  background: red;
   padding-left: 50px;
+  position: relative;
 }
 
 .reason-feature--housing {
@@ -8,14 +8,47 @@
   padding-bottom: 0;
 }
 
+.reason-feature--housing::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: 26px;
+  left: 1px;
+  background: url("../img/icon-house.svg") 50% 50% no-repeat;
+  background-size: contain;
+}
+
 .reason-feature--souvenirs {
   padding-top: 28px;
   padding-bottom: 0;
 }
 
+.reason-feature--souvenirs::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  top: 18px;
+  left: 5px;
+  background: url("../img/icon-gift.svg") 50% 50% no-repeat;
+  background-size: contain;
+}
+
 .reason-feature--food {
   padding-top: 28px;
   padding-bottom: 38px;
+}
+
+.reason-feature--food::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 25px;
+  left: -2px;
+  background: url("../img/icon-burger.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .reason-feature__title {
@@ -26,7 +59,6 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  background: yellow;
 }
 
 .reason-feature__text {
@@ -35,7 +67,6 @@
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background: yellow;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,12 +82,39 @@
     order: 1;
   }
 
+  .reason-feature--housing::before {
+    top: 60px;
+    left: 50%;
+    margin-left: -38px;
+    width: 75px;
+    height: 72px;
+    background: url("../img/icon-house.svg") 50% 50% no-repeat;
+  }
+
   .reason-feature--souvenirs {
     order: 3;
   }
 
+  .reason-feature--souvenirs::before {
+    top: 57px;
+    left: 50%;
+    margin-left: -33px;
+    width: 64px;
+    height: 75px;
+    background: url("../img/icon-gift.svg") 50% 50% no-repeat;
+  }
+
   .reason-feature--food {
     order: 2;
+  }
+
+  .reason-feature--food::before {
+    left: 50%;
+    top: 63px;
+    margin-left: -39px;
+    width: 77px;
+    height: 68px;
+    background: url("../img/icon-burger.svg") 50% 50% no-repeat;
   }
 
   .reason-feature__title {
