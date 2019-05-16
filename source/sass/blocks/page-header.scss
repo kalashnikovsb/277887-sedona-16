@@ -1,9 +1,21 @@
 .page-header {
   margin: 0 auto;
+  position: relative;
 }
 
 .page-header__logo {
-  display: none;
+  width: 102px;
+  height: 83px;
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  margin-left: -51px;
+}
+
+.page-header__image {
+  width: 102px;
+  height: 83px;
+  display: block;
 }
 
 .page-header__button {
@@ -12,12 +24,20 @@
 
 
 @media (min-width: $tablet-width) {
-  .page-header__logo {
-    display: none;
-  }
-
   .page-header__button {
     display: none;
+  }
+  
+  .page-header__logo {
+    width: 102px;
+    height: 83px;
+    bottom: auto;
+    top: 0;
+  }
+
+  .page-header__image {
+    width: 102px;
+    height: 83px;
   }
 }
 
@@ -25,5 +45,16 @@
   .page-header {
     background-color: #ffffff;
     width: 1200px;
+  }
+  
+  .page-header__logo {
+    width: 188px;
+    height: 96px;
+    margin-left: -94px;
+  }
+
+  .page-header__image {
+    width: 188px;
+    height: 96px;
   }
 }
