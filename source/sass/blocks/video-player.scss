@@ -7,11 +7,12 @@
 
 .video-player__screen {
   height: 201px;
-  background: red;
+  min-width: 320px;
+  background: black;
   background-image: url("../../img/video-mobile@1x.jpg");
-  background-position: 50% 0%;
+  background-position: 50% 50%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: 320px auto;
 }
 
 @media (min-resolution: 1.5dppx) {
@@ -249,10 +250,6 @@
 
   .video-player__screen {
     width: 800px;
-  }
-
-  .video-player__screen {
-    width: 800px;
     background-image: url("../../img/video-desktop@1x.jpg");
     background-size: 800px auto;
   }
@@ -260,12 +257,6 @@
   @media (min-resolution: 1.5dppx) {
     .video-player__screen {
       background-image: url("../../img/video-desktop@2x.jpg");
-    }
-  }
-
-  @media (min-resolution: 1.5dppx) {
-    .video-player__screen {
-
     }
   }
 
