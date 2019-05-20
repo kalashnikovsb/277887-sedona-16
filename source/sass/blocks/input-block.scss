@@ -1,3 +1,418 @@
-.input-block {
-  margin: 0;
+.input-block--name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-block--name:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-block__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.input-block__field {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  opacity: 1;
+}
+
+.input-block__field:hover {
+  background-color: #e5e5e5;
+}
+
+.input-block__field:active {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px rgba(229, 229, 229, 1);
+}
+
+.input-block__field:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px rgba(229, 229, 229, 1);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.input-block__field::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  opacity: 1;
+}
+
+.input-block__field[id="firstname"] {
+  width: 230px;
+}
+
+.input-block__field[id="lastname"] {
+  width: 192px;
+}
+
+.input-block__field[id="patronymic"] {
+  width: 194px;
+}
+
+.input-block--contacts {
+  margin-bottom: 11px;
+}
+
+.input-block--contacts:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-block--contacts .input-block__label {
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.input-block__label[for="tel"]::before,
+.input-block__label[for="email"]::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  top: 33px;
+  right: 0;
+}
+
+.input-block__label[for="tel"]::before {
+  background: url("../img/icon-phone.svg") 50% 50% no-repeat #e6e6e6;
+}
+
+.input-block__label[for="email"]::before {
+  background: url("../img/icon-mail.svg") 50% 50% no-repeat #e6e6e6;
+}
+
+.input-block--contacts .input-block__field {
+  width: 280px;
+}
+
+.input-block--impressions {
+  height: 56px;
+  margin-bottom: 13px;
+  display: flex;
+}
+
+.input-block--impressions:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-block__radio {
+  display: none;
+}
+
+.input-block__label--impressions {
+  display: block;
+  width: 280px;
+  padding-left: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  position: relative;
+}
+
+.input-block__label--impressions::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.input-block__label--impressions::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  border-radius: 50%;
+  background-color: #333333;
+  display: none;
+}
+
+.input-block__radio:checked ~ .input-block__label--impressions::after {
+  display: block;
+}
+
+.input-block__radio:hover ~ .input-block__label--impressions::before {
+  background-color: #e5e5e5;
+}
+
+.input-block__radio:hover ~ .input-block__label--impressions::after {
+  display: none;
+}
+
+.input-block__radio:hover:checked ~ .input-block__label--impressions::before {
+  background-color: #e5e5e5;
+}
+
+.input-block__radio:hover:checked ~ .input-block__label--impressions::after {
+  display: block;
+}
+
+.input-block__radio:active ~ .input-block__label--impressions::before {
+  background-color: #d5d5d5;
+}
+
+.input-block__radio:active ~ .input-block__label--impressions::after {
+  display: none;
+}
+
+.input-block__radio:active:checked ~ .input-block__label--impressions::before {
+  background-color: #d5d5d5;
+}
+
+.input-block__radio:active:checked ~ .input-block__label--impressions::after {
+  background-color: #a4a4a4;
+}
+
+.input-block--attractions {
+  height: 56px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.input-block--attractions:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-block__checkbox {
+  display: none;
+}
+
+.input-block__label--attractions {
+  display: block;
+  width: 280px;
+  padding-left: 78px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  position: relative;
+}
+
+.input-block__label--attractions::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.input-block__label--attractions::after {
+  content: "";
+  width: 25px;
+  height: 19px;
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  background: url("../img/icon-tick.svg") 50% 50% no-repeat;
+  display: none;
+}
+
+.input-block__checkbox:checked ~ .input-block__label--attractions::after {
+  display: block;
+}
+
+.input-block__checkbox:hover ~ .input-block__label--attractions::before {
+  background-color: #e5e5e5;
+}
+
+.input-block__checkbox:hover:checked ~ .input-block__label--attractions::after {
+  display: block;
+}
+
+.input-block__checkbox:active ~ .input-block__label--attractions::before {
+  background-color: #d5d5d5;
+}
+
+.input-block__checkbox:active:checked ~ .input-block__label--attractions::after {
+  display: block;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .input-block--impressions {
+    margin-bottom: 23px;
+  }
+
+  .input-block--impressions .input-block__label {
+    padding-left: 76px;
+    width: 248px;
+  }
+
+  .input-block__field[id="firstname"] {
+    width: 216px;
+  }
+
+  .input-block__field[id="lastname"] {
+    width: 178px;
+  }
+
+  .input-block__field[id="patronymic"] {
+    width: 180px;
+  }
+
+  .input-block--contacts {
+    margin-bottom: 22px;
+  }
+
+  .input-block--contacts:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .input-block--contacts .input-block__label {
+    margin-bottom: 7px;
+  }
+
+  .input-block--contacts .input-block__field {
+    width: 648px;
+  }
+
+  .input-block--attractions {
+    margin-bottom: 30px;
+  }
+
+  .input-block--attractions .input-block__label {
+    width: 122px;
+    margin-right: 60px;
+  }
+
+  .input-block--attractions:nth-of-type(2n) .input-block__label {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-block--impressions {
+    margin-bottom: 23px;
+  }
+
+  .input-block--impressions .input-block__label::before {
+    left: 4px;
+  }
+
+  .input-block--impressions .input-block__label {
+    padding-left: 80px;
+    width: 248px;
+  }
+
+  .input-block__label--impressions::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 18px;
+    left: 21px;
+    border-radius: 50%;
+    background-color: #333333;
+    display: none;
+  }
+
+  .input-block__field[id="firstname"] {
+    width: 350px;
+  }
+
+  .input-block__field[id="lastname"] {
+    width: 312px;
+  }
+
+  .input-block__field[id="patronymic"] {
+    width: 314px;
+  }
+
+  .input-block--contacts {
+    margin-bottom: 0;
+  }
+
+  .input-block--contacts span {
+    display: none;
+  }
+
+  .input-block--contacts:nth-of-type(1) {
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .input-block--contacts:nth-of-type(2) {
+    width: 480px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .input-block--contacts .input-block__label {
+    padding: 0;
+    margin-top: 18px;
+  }
+
+  .input-block__label[for="tel"]::before,
+  .input-block__label[for="email"]::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 58px;
+    height: 58px;
+    top: -18px;
+    right: -330px;
+  }
+
+  .input-block__label[for="email"]::before {
+    right: -334px;
+  }
+
+  .input-block--contacts .input-block__field {
+    width: 315px;
+  }
+
+  .input-block--attractions {
+    margin-right: 69px;
+    margin-bottom: 20px;
+  }
+
+  .input-block--attractions:nth-of-type(4n) {
+    margin-right: 0;
+  }
+
+  .input-block--attractions .input-block__label {
+    padding-left: 80px;
+    margin-right: 0;
+    width: auto;
+  }
 }

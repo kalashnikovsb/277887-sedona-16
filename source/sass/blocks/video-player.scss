@@ -146,13 +146,13 @@
   .video-player__screen {
     width: 648px;
     height: 500px;
-    background-image: url("../../img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     background-size: 648px auto;
   }
 
   @media (min-resolution: 1.5dppx) {
     .video-player__screen {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
 

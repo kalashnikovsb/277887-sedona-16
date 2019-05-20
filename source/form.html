@@ -42,79 +42,92 @@
         <p class="page-intro__text page-intro__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Представьтесь:</legend>
-          <ul class="main-form__inputs">
-            <li class="input-block">
-              <label class="input-block__label input-block__label--name" for="firstname">Имя:</label>
-              <input class="input-block__field" type="text" id="firstname" name="firstname" placeholder="Петр">
-            </li>
-            <li class="input-block">
-              <label class="input-block__label input-block__label--name" for="lastname">Фамилия:</label>
-              <input class="input-block__field" type="text" id="lastname" name="lastname" placeholder="Иванов">
-            </li>
-            <li class="input-block">
-              <label class="input-block__label input-block__label--name" for="patronymic">Отчество:</label>
-              <input class="input-block__field" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-            </li>
-          </ul>
+        <fieldset class="main-form__fieldset main-form__fieldset--name">
+          <div class="main-form__center">
+            <h2 class="main-form__title main-form__title--name">Представьтесь:</h2>
+            <ul class="main-form__inputs">
+              <li class="input-block input-block--name">
+                <label class="input-block__label" for="firstname">Имя*:</label>
+                <input class="input-block__field" type="text" id="firstname" name="firstname" placeholder="Петр">
+              </li>
+              <li class="input-block input-block--name">
+                <label class="input-block__label" for="lastname">Фамилия*:</label>
+                <input class="input-block__field" type="text" id="lastname" name="lastname" placeholder="Иванов">
+              </li>
+              <li class="input-block input-block--name">
+                <label class="input-block__label" for="patronymic">Отчество:</label>
+                <input class="input-block__field" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Контактная информация:</legend>
-          <ul class="main-form__inputs">
-            <li class="input-block">
-              <label class="input-block__label input-block__label--name" for="tel">Контактный телефон:</label>
-              <input class="input-block__field" type="tel" id="tel" name="tel" placeholder="Введите телефон">
-            </li>
-            <li class="input-block">
-              <label class="input-block__label input-block__label--name" for="email">Электронная почта:</label>
-              <input class="input-block__field" type="email" id="email" name="email" placeholder="Введите e-mail">
-            </li>
-          </ul>
+        <fieldset class="main-form__fieldset main-form__fieldset--contacts">
+          <div class="main-form__center">
+            <h2 class="main-form__title main-form__title--contacts">Контактная информация:</h2>
+            <ul class="main-form__inputs">
+              <li class="input-block input-block--contacts">
+                <label class="input-block__label" for="tel"><span>Контактный</span> телефон*:</label>
+                <input class="input-block__field" type="tel" id="tel" name="tel" placeholder="Введите телефон">
+              </li>
+              <li class="input-block input-block--contacts">
+                <label class="input-block__label" for="email">Электронная почта*:</label>
+                <input class="input-block__field" type="email" id="email" name="email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Ваше общее впечатление:</legend>
-          <ul class="main-form__inputs">
-            <li class="input-block">
-              <input class="input-block__radio" type="radio" name="impression" id="positive" value="positive">
-              <label class="input-block__label input-block__label--impression" for="positive">Скорее положительное</label>
-            </li>
-            <li class="input-block">
-              <input class="input-block__radio" type="radio" name="impression" id="negative" value="negative">
-              <label class="input-block__label input-block__label--impression" for="negative">Скорее отрицательное</label>
-            </li>
-            <li class="input-block">
-              <input class="input-block__radio" type="radio" name="impression" id="unknown" value="unknown">
-              <label class="input-block__label input-block__label--impression" for="unknown">Затрудняюсь ответить</label>
-            </li>
-          </ul>
+        <fieldset class="main-form__fieldset main-form__fieldset--impressions">
+          <div class="main-form__center">
+            <h2 class="main-form__title main-form__title--impressions">Ваше общее впечатление:</h2>
+            <ul class="main-form__inputs">
+              <li class="input-block input-block--impressions">
+                <input class="input-block__radio" type="radio" name="impression" id="positive" value="positive" checked>
+                <label class="input-block__label input-block__label--impressions" for="positive">Скорее положительное</label>
+              </li>
+              <li class="input-block input-block--impressions">
+                <input class="input-block__radio" type="radio" name="impression" id="negative" value="negative">
+                <label class="input-block__label input-block__label--impressions" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="input-block input-block--impressions">
+                <input class="input-block__radio" type="radio" name="impression" id="unknown" value="unknown">
+                <label class="input-block__label input-block__label--impressions" for="unknown">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Посещенные достопримечательности:</legend>
-          <ul class="main-form__inputs">
-            <li class="input-block">
-              <input class="input-block__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" value="devils-bridge">
-              <label class="input-block__label input-block__label--attractions" for="devils-bridge">Мост дьявола</label>
-            </li>
-            <li class="input-block">
-              <input class="input-block__checkbox" type="checkbox" name="bell-mountain" id="bell-mountain" value="bell-mountain">
-              <label class="input-block__label input-block__label--attractions" for="bell-mountain">Гора-Колокол</label>
-            </li>
-            <li class="input-block">
-              <input class="input-block__checkbox" type="checkbox" name="slide-park" id="slide-park" value="slide-park">
-              <label class="input-block__label input-block__label--attractions" for="slide-park">Слайд-парк</label>
-            </li>
-            <li class="input-block">
-              <input class="input-block__checkbox" type="checkbox" name="red-rocks" id="red-rocks" value="red-rocks">
-              <label class="input-block__label input-block__label--attractions" for="red-rocks">Красные скалы</label>
-            </li>
-          </ul>
+        <fieldset class="main-form__fieldset main-form__fieldset--attractions">
+          <div class="main-form__center">
+            <h2 class="main-form__title main-form__title--attractions">Посещенные достопримечательности:</h2>
+            <ul class="main-form__inputs">
+              <li class="input-block input-block--attractions">
+                <input class="input-block__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" value="devils-bridge" checked>
+                <label class="input-block__label input-block__label--attractions" for="devils-bridge">Мост Дьявола</label>
+              </li>
+              <li class="input-block input-block--attractions">
+                <input class="input-block__checkbox" type="checkbox" name="bell-mountain" id="bell-mountain" value="bell-mountain" checked>
+                <label class="input-block__label input-block__label--attractions" for="bell-mountain">Гора-Колокол</label>
+              </li>
+              <li class="input-block input-block--attractions">
+                <input class="input-block__checkbox" type="checkbox" name="slide-park" id="slide-park" value="slide-park" checked>
+                <label class="input-block__label input-block__label--attractions" for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="input-block input-block--attractions">
+                <input class="input-block__checkbox" type="checkbox" name="red-rocks" id="red-rocks" value="red-rocks">
+                <label class="input-block__label input-block__label--attractions" for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Опишите свои эмоции:</legend>
-          <textarea class="textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="main-form__fieldset main-form__fieldset--emotions">
+          <div class="main-form__center">
+            <h2 class="main-form__title main-form__title--emotions">Опишите свои эмоции:</h2>
+            <textarea class="textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
         </fieldset>
-        <button class="button button--submit" type="submit">Отправить отзыв</button>
+        <div class="main-form__center main-form__submit-wrap">
+          <button class="button button--submit" type="submit">Отправить отзыв</button>
+          <p class="main-form__required-mark">* &ndash; Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
@@ -141,5 +154,17 @@
         </a>
       </div>
     </footer>
+    <section class="popup-failure">
+      <h2 class="popup-failure__title">Что-то пошло не так!</h2>
+      <p class="popup-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button button--ok">Ок</button>
+    </section>
+    <section class="popup-sucess">
+      <h2 class="popup-sucess__title">Ваш отзыв отправлен!</h2>
+      <p class="popup-sucess__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup-sucess__wrap">
+        <button class="button button--close">Закрыть окно</button>
+      </div>
+    </section>
   </body>
 </html>
