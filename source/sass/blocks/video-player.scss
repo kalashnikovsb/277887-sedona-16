@@ -99,15 +99,15 @@
   background: transparent;
 }
 
-.video-player__subtitles path {
+.video-player__subtitles svg {
   fill: #5c6870;
 }
 
-.video-player__subtitles:hover path {
+.video-player__subtitles:hover svg {
   fill: #333333;
 }
 
-.video-player__subtitles:active path {
+.video-player__subtitles:active svg {
   fill: #b8b8b8;
 }
 
@@ -122,15 +122,15 @@
   background: transparent;
 }
 
-.video-player__fullscreen polygon {
+.video-player__fullscreen svg {
   fill: #5c6870;
 }
 
-.video-player__fullscreen:hover polygon {
+.video-player__fullscreen:hover svg {
   fill: #333333;
 }
 
-.video-player__fullscreen:active polygon {
+.video-player__fullscreen:active svg {
   fill: #b8b8b8;
 }
 
@@ -212,15 +212,15 @@
     bottom: 37px;
   }
 
-  .video-player__subtitles path {
+  .video-player__subtitles svg {
     fill: #ffffff;
   }
 
-  .video-player__subtitles:hover path {
+  .video-player__subtitles:hover svg {
     fill: #c2c2c2;
   }
 
-  .video-player__subtitles:active path {
+  .video-player__subtitles:active svg {
     fill: #949494;
   }
 
@@ -229,15 +229,15 @@
     bottom: 37px;
   }
 
-  .video-player__fullscreen polygon {
+  .video-player__fullscreen svg {
     fill: #ffffff;
   }
 
-  .video-player__fullscreen:hover polygon {
+  .video-player__fullscreen:hover svg {
     fill: #c2c2c2;
   }
 
-  .video-player__fullscreen:active polygon {
+  .video-player__fullscreen:active svg {
     fill: #949494;
   }
 }
