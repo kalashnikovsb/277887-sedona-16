@@ -1,27 +1,423 @@
 .main-form {
+  margin-bottom: 37px;
+}
+
+.main-form__fieldset {
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.main-form__fieldset--name {
+  padding-top: 17px;
+  padding-bottom: 25px;
+}
+
+.main-form__fieldset--contacts {
+  padding-top: 17px;
+  padding-bottom: 28px;
+}
+
+.main-form__fieldset--impressions {
+  padding-top: 17px;
+  padding-bottom: 28px;
+}
+
+.main-form__fieldset--attractions {
+  padding-top: 17px;
+  padding-bottom: 25px;
+}
+
+.main-form__fieldset--emotions {
+  padding-top: 17px;
+  padding-bottom: 0;
+  margin-bottom: 51px;
+}
+
+.main-form__center {
   width: 280px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 1658px;
-  background: black;
+}
+
+.main-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.main-form__title--name {
+  margin-bottom: 22px;
+}
+
+.main-form__title--contacts {
+  margin-bottom: 22px;
+}
+
+.main-form__title--impressions {
+  margin-bottom: 22px;
+}
+
+.main-form__title--attractions {
+  margin-bottom: 18px;
+}
+
+.main-form__title--emotions {
+  margin-bottom: 18px;
+}
+
+.main-form__inputs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-form__required-mark {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .main-form {
     width: 648px;
-    padding-left: 60px;
-    padding-right: 60px;
     margin: 0 auto;
-    height: 1406px;
+    margin-bottom: 61px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__fieldset {
+    border: none;
+  }
+
+  .main-form__center {
+    width: auto;
+  }
+
+  .main-form__title {
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .main-form__fieldset--impressions {
+    order: 1;
+    width: 322px;
+    padding: 0;
+    position: relative;
+  }
+
+  .main-form__fieldset--impressions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--impressions {
+    margin-bottom: 58px;
+  }
+
+  .main-form__fieldset--name {
+    order: 2;
+    width: 266px;
+    padding: 0;
+    padding-left: 58px;
+  }
+
+  .main-form__title--name {
+    margin-bottom: 57px;
+  }
+
+  .main-form__fieldset--contacts {
+    order: 3;
+    width: 648px;
+    padding: 0;
+    margin-top: 69px;
+    margin-bottom: 52px;
+  }
+
+  .main-form__title--contacts {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .main-form__title--contacts::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+    left: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--contacts::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+    right: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__fieldset--attractions {
+    order: 4;
+    width: 648px;
+    padding: 0;
+    margin-bottom: 38px;
+  }
+
+  .main-form__fieldset--attractions .main-form__inputs {
+    width: 460px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__title--attractions {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 44px;
+    position: relative;
+  }
+
+  .main-form__title--attractions::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 27px;
+    left: -174px;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--attractions::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 27px;
+    right: -174px;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__fieldset--emotions {
+    order: 5;
+    width: 648px;
+    padding: 0;
+    margin-bottom: 58px;
+  }
+
+  .main-form__title--emotions {
+    text-align: center;
+    margin-bottom: 58px;
+    position: relative;
+  }
+
+  .main-form__title--emotions::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+    left: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--emotions::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+    right: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__submit-wrap {
+    order: 6;
+    display: flex;
+    align-items: flex-start;
+    width: 648px;
+    justify-content: space-between;
+  }
+
+  .main-form__required-mark {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    background: white;
+    margin: 0;
+    margin-top: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-form {
-    width: 1200px;
-    padding-left: 0;
-    padding-right: 0;
-    height: 1216px;
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-form__title {
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .main-form__fieldset--impressions {
+    order: 1;
+    width: 480px;
+    padding: 0;
+  }
+
+  .main-form__title--impressions {
+    padding-left: 80px;
+    margin-bottom: 58px;
+  }
+
+  .main-form__fieldset--name {
+    order: 2;
+    width: 400px;
+    padding: 0;
+    padding-left: 80px;
+  }
+
+  .main-form__title--name {
+    margin-bottom: 57px;
+  }
+
+  .main-form__fieldset--contacts {
+    order: 3;
+    width: 960px;
+    margin-top: 67px;
+    margin-bottom: 53px;
+  }
+
+  .main-form__title--contacts {
+    text-align: center;
+    margin-bottom: 74px;
+    position: relative;
+  }
+
+  .main-form__title--contacts::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 13px;
+    left: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--contacts::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 13px;
+    right: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__fieldset--contacts .main-form__inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-form__fieldset--attractions {
+    order: 4;
+    width: 960px;
+    padding: 0;
+    margin-bottom: 46px;
+  }
+
+  .main-form__fieldset--attractions .main-form__inputs {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-form__title--attractions {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  .main-form__title--attractions::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 27px;
+    left: -330px;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--attractions::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 27px;
+    right: -330px;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__fieldset--emotions {
+    width: 960px;
+    margin-bottom: 57px;
+  }
+
+  .main-form__title--emotions {
+    text-align: center;
+  }
+
+  .main-form__title--emotions::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 13px;
+    left: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__title--emotions::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    top: 13px;
+    right: 0;
+    background-color: #dbdbdb;
+  }
+
+  .main-form__submit-wrap {
+    width: 960px;
   }
 }
