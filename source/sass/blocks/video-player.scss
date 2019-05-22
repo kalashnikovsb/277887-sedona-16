@@ -9,7 +9,7 @@
   height: 201px;
   min-width: 320px;
   background: black;
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-position: 50% 50%;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 @media (min-resolution: 1.5dppx) {
   .video-player__screen {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
   }
 }
 
@@ -250,13 +250,13 @@
 
   .video-player__screen {
     width: 800px;
-    background-image: url("../../img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
     background-size: 800px auto;
   }
 
   @media (min-resolution: 1.5dppx) {
     .video-player__screen {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 

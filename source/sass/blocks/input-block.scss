@@ -116,10 +116,6 @@
   margin-bottom: 0;
 }
 
-.input-block__radio {
-  display: none;
-}
-
 .input-block__label--impressions {
   display: block;
   width: 280px;
@@ -193,6 +189,10 @@
   background-color: #a4a4a4;
 }
 
+.input-block__radio:focus ~ .input-block__label--impressions::before {
+  background-color: #e5e5e5;
+}
+
 .input-block--attractions {
   height: 56px;
   margin-bottom: 24px;
@@ -201,10 +201,6 @@
 
 .input-block--attractions:last-of-type {
   margin-bottom: 0;
-}
-
-.input-block__checkbox {
-  display: none;
 }
 
 .input-block__label--attractions {
@@ -263,6 +259,10 @@
 .input-block__checkbox:active:checked ~ .input-block__label--attractions::after {
   display: block;
   opacity: 0.3;
+}
+
+.input-block__checkbox:focus ~ .input-block__label--attractions::before {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {

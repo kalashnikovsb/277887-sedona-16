@@ -85,15 +85,15 @@
             <h2 class="main-form__title main-form__title--impressions">Ваше общее впечатление:</h2>
             <ul class="main-form__inputs">
               <li class="input-block input-block--impressions">
-                <input class="input-block__radio" type="radio" name="impression" id="positive" value="positive" checked="">
+                <input class="input-block__radio visually-hidden" type="radio" name="impression" id="positive" value="positive" checked="">
                 <label class="input-block__label input-block__label--impressions" for="positive">Скорее положительное</label>
               </li>
               <li class="input-block input-block--impressions">
-                <input class="input-block__radio" type="radio" name="impression" id="negative" value="negative">
+                <input class="input-block__radio visually-hidden" type="radio" name="impression" id="negative" value="negative">
                 <label class="input-block__label input-block__label--impressions" for="negative">Скорее отрицательное</label>
               </li>
               <li class="input-block input-block--impressions">
-                <input class="input-block__radio" type="radio" name="impression" id="unknown" value="unknown">
+                <input class="input-block__radio visually-hidden" type="radio" name="impression" id="unknown" value="unknown">
                 <label class="input-block__label input-block__label--impressions" for="unknown">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -104,19 +104,19 @@
             <h2 class="main-form__title main-form__title--attractions">Посещенные достопримечательности:</h2>
             <ul class="main-form__inputs">
               <li class="input-block input-block--attractions">
-                <input class="input-block__checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" value="devils-bridge" checked="">
+                <input class="input-block__checkbox visually-hidden" type="checkbox" name="devils-bridge" id="devils-bridge" value="devils-bridge" checked="">
                 <label class="input-block__label input-block__label--attractions" for="devils-bridge">Мост Дьявола</label>
               </li>
               <li class="input-block input-block--attractions">
-                <input class="input-block__checkbox" type="checkbox" name="bell-mountain" id="bell-mountain" value="bell-mountain" checked="">
+                <input class="input-block__checkbox visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" value="bell-mountain" checked="">
                 <label class="input-block__label input-block__label--attractions" for="bell-mountain">Гора-Колокол</label>
               </li>
               <li class="input-block input-block--attractions">
-                <input class="input-block__checkbox" type="checkbox" name="slide-park" id="slide-park" value="slide-park" checked="">
+                <input class="input-block__checkbox visually-hidden" type="checkbox" name="slide-park" id="slide-park" value="slide-park" checked="">
                 <label class="input-block__label input-block__label--attractions" for="slide-park">Слайд-парк</label>
               </li>
               <li class="input-block input-block--attractions">
-                <input class="input-block__checkbox" type="checkbox" name="red-rocks" id="red-rocks" value="red-rocks">
+                <input class="input-block__checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks" value="red-rocks">
                 <label class="input-block__label input-block__label--attractions" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
@@ -152,7 +152,9 @@
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+          <svg width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>

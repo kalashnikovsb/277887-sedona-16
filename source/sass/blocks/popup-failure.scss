@@ -1,7 +1,7 @@
 .popup-failure {
   background-color: #ffffff;
-  position: absolute;
-  top: 1543px;
+  position: fixed;
+  top: 25vh;
   width: 100%;
   padding-top: 39px;
   padding-bottom: 35px;
@@ -34,7 +34,6 @@
 @media (min-width: $tablet-width) {
   .popup-failure {
     width: 400px;
-    top: 1430px;
     padding-top: 54px;
     padding-bottom: 49px;
     left: 50%;
@@ -55,11 +54,5 @@
   .popup-failure__text {
     width: 280px;
     margin-bottom: 33px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .popup-failure {
-    top: 1390px;
   }
 }
