@@ -105,6 +105,7 @@
   .page-nav__link:active {
     background-color: transparent;
     border: none;
+    color: #000000;
     opacity: 0.3;
   }
 
@@ -117,6 +118,7 @@
   }
 
   .page-nav__item--active .page-nav__link:active {
+    color: #766357;
     opacity: 0.3;
   }
 

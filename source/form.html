@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/polyfill.js"></script>
   </head>
@@ -52,11 +54,11 @@
             <ul class="main-form__inputs">
               <li class="input-block input-block--name">
                 <label class="input-block__label" for="firstname">Имя*:</label>
-                <input class="input-block__field" type="text" id="firstname" name="firstname" placeholder="Петр">
+                <input class="input-block__field" type="text" id="firstname" name="firstname" placeholder="Петр" required>
               </li>
               <li class="input-block input-block--name">
                 <label class="input-block__label" for="lastname">Фамилия*:</label>
-                <input class="input-block__field" type="text" id="lastname" name="lastname" placeholder="Иванов">
+                <input class="input-block__field" type="text" id="lastname" name="lastname" placeholder="Иванов" required>
               </li>
               <li class="input-block input-block--name">
                 <label class="input-block__label" for="patronymic">Отчество:</label>
@@ -71,11 +73,11 @@
             <ul class="main-form__inputs">
               <li class="input-block input-block--contacts">
                 <label class="input-block__label" for="tel"><span>Контактный</span> телефон*:</label>
-                <input class="input-block__field" type="tel" id="tel" name="tel" placeholder="Введите телефон">
+                <input class="input-block__field" type="tel" id="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{5,11}" required>
               </li>
               <li class="input-block input-block--contacts">
                 <label class="input-block__label" for="email">Электронная почта*:</label>
-                <input class="input-block__field" type="email" id="email" name="email" placeholder="Введите e-mail">
+                <input class="input-block__field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </div>
